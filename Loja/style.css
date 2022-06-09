@@ -1,0 +1,894 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: #f5f5f7;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Montserrat SemiBold;
+  src: url(fonts/Montserrat-SemiBold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: Montserrat Mediume;
+  src: url(fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat Bolde;
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat Regular;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+
+/* ------ DOACAO / HEADER ------ */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#DoacaoUnicef {
+  font-size: 1.78rem;
+  font-family: Montserrat SemiBold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 4.3rem;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+#unicef {
+  display: flex;
+  max-width: 9rem;
+  max-height: 4rem;
+  width: auto;
+  height: auto;
+  margin-top: -0.26rem;
+}
+
+#topbar {
+  width: 100%;
+  height: 9rem;
+  background-color: #2f3d4c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  font-family: Montserrat Mediume;
+  color: white;
+}
+
+#nomedosite {
+  font-family: Montserrat SemiBold;
+  font-size: 1.1rem;
+}
+
+#logoenome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+  gap: 0.5rem;
+}
+
+.logopineapple {
+  display: block;
+  max-width: 7.9rem;
+  max-height: 5.9rem;
+  width: auto;
+  height: auto;
+}
+
+#carrinho {
+  padding-right: 2rem;
+}
+
+#carroepesquisa {
+  display: flex;
+  flex-direction: row;
+  gap: 2.7rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#linkdiferente {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------ MAIN ------ */
+
+h1 {
+  font-size: 6rem;
+  font-family: Montserrat Bolde;
+  padding-top: 7.5rem;
+  text-align: center;
+}
+
+#subtitulo {
+  font-size: 2.7rem;
+  font-family: Montserrat SemiBold;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.boxprodutos {
+  width: 11.6rem;
+  height: 11.8rem;
+  background-color: #cfcdc1;
+  border-radius: 1.5rem;
+  font-family: Montserrat Mediume;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#iphoneimg {
+  display: block;
+  max-width: 4rem;
+  max-height: 19rem;
+  width: auto;
+  height: auto;
+}
+
+#macbooks {
+  display: block;
+  max-width: 8rem;
+  max-height: 24rem;
+  width: auto;
+  height: auto;
+  padding-top: 1rem;
+}
+
+#applewatchimg {
+  display: block;
+  max-width: 6.6rem;
+  max-height: 22rem;
+  width: auto;
+  height: auto;
+  padding-top: 1rem;
+}
+
+#airpodsimgone {
+  display: block;
+  max-width: 4.4rem;
+  max-height: 18.5rem;
+  width: auto;
+  height: auto;
+}
+
+#ipadimg {
+  display: block;
+  max-width: 5rem;
+  max-height: 22rem;
+  width: auto;
+  height: auto;
+}
+
+#airtagsimg {
+  display: block;
+  max-width: 6.6rem;
+  max-height: 22rem;
+  width: auto;
+  height: auto;
+}
+
+#appletvimg {
+  display: block;
+  max-width: 6.6rem;
+  max-height: 22rem;
+  width: auto;
+  height: auto;
+}
+
+#acessoriosimg {
+  display: block;
+  max-width: 4rem;
+  max-height: 15rem;
+  width: auto;
+  height: auto;
+}
+
+.texto {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
+#ALLPRODUCTS {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 10rem;
+}
+
+.boxprodutos:hover,
+.boxs:hover,
+#boxcordiferente:hover,
+.boxs2:hover,
+.boxs2-1:hover {
+  transition-duration: 150ms;
+  transform: scale(1.04);
+}
+
+.boxprodutos:not(:hover),
+.boxs:not(:hover),
+#boxcordiferente:not(:hover),
+.boxs2:not(:hover),
+.boxs2-1:not(:hover) {
+  transition-duration: 150ms;
+  opacity: 100%;
+  transform: scale(1);
+}
+
+#iphone13 {
+  display: block;
+  max-width: 200rem;
+  max-height: 20rem;
+  width: auto;
+  height: auto;
+  padding-top: 7.2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+#imac {
+  display: block;
+  max-width: 190rem;
+  max-height: 18rem;
+  width: auto;
+  height: auto;
+  padding-top: 4.5rem;
+  padding-left: 3rem;
+  padding-right: 25rem;
+}
+
+#applewatch {
+  display: block;
+  max-width: 190rem;
+  max-height: 18rem;
+  width: auto;
+  height: auto;
+  margin: 4rem auto 0 auto;
+}
+
+#appletv {
+  display: block;
+  max-width: 170rem;
+  max-height: 14rem;
+  width: auto;
+  height: auto;
+  margin: 5rem auto 0 auto;
+}
+
+.boxs {
+  width: 29rem;
+  height: 39rem;
+  background-color: #cfcdc1;
+  border-radius: 2.5rem;
+}
+
+#boxcordiferente {
+  width: 29rem;
+  height: rem;
+  background-color: #4b4747;
+  border-radius: 2.5rem;
+}
+
+#produtoboxdiferente {
+  font-family: Montserrat Mediume;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  color: white;
+}
+
+#titboxdiferente {
+  font-family: Montserrat Bolde;
+  font-size: 2.7rem;
+  text-align: center;
+  padding-top: 2.9rem;
+  color: white;
+}
+.tituloprod {
+  font-family: Montserrat Bolde;
+  font-size: 4rem;
+  margin-left: 9rem;
+  padding-top: 10rem;
+  margin-right: 50rem;
+  line-height: 5rem;
+}
+
+#titulolinkar {
+  font-family: Montserrat Bolde;
+  font-size: 4rem;
+  margin-left: 9rem;
+  padding-top: 10rem;
+  margin-right: 50rem;
+  line-height: 5rem;
+}
+
+.subtituloprod {
+  margin-left: 9rem;
+  font-size: 2.2rem;
+  font-family: Montserrat Semibold;
+}
+
+.produtobox {
+  font-family: Montserrat Mediume;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.titbox {
+  font-family: Montserrat Bolde;
+  font-size: 2.9rem;
+  text-align: center;
+  padding-top: 3.5rem;
+}
+
+.subbox {
+  font-family: Montserrat Mediume;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#subbox2 {
+  font-family: Montserrat Mediume;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#subbox3 {
+  font-family: Montserrat Mediume;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 0.7rem;
+}
+
+#titboxdiferente {
+  font-family: Montserrat Bolde;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 2.2rem;
+  padding-top: 2rem;
+}
+
+.TUDOPRODUTO {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.tresprodutos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6rem;
+  padding-left: 9rem;
+  padding-right: 6rem;
+  padding-top: 3.6rem;
+}
+
+.boxs2 {
+  width: 29rem;
+  height: 39rem;
+  background-color: #cfcdc1;
+  border-radius: 2.5rem;
+  margin-top: 3.6rem;
+}
+
+#ajudacompleto {
+  margin-left: 9rem;
+  margin-top: 3.6rem;
+}
+
+#bloco1 {
+  display: flex;
+  flex-direction: row;
+  width: 99rem;
+  height: 25rem;
+  background-color: #cfcdc1;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  padding-top: 3.6rem;
+  border-radius: 2.5rem;
+}
+
+.imgbloco {
+  display: block;
+  max-width: 57.5rem;
+  max-height: 26.8rem;
+  width: auto;
+  height: auto;
+  padding-top: 0.4rem;
+}
+
+#atedenteimg {
+  display: block;
+  max-width: 110rem;
+  max-height: 27rem;
+  width: auto;
+  height: auto;
+  margin-top: -2rem;
+}
+
+#sotexto {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: -3.5rem;
+}
+
+#duvidas {
+  font-family: Montserrat Bolde;
+  font-size: 5rem;
+  text-align: center;
+}
+
+#entrecontato {
+  font-family: Montserrat Semibold;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  text-align: center;
+  padding-left: 17rem;
+  padding-right: 17rem;
+}
+
+#aqui {
+  font-family: Montserrat Semibold;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #0066ff;
+  text-decoration: underline;
+}
+
+#blocoshorijuntos {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 1.5rem;
+}
+
+.blocoshorizontal {
+  position: relative;
+}
+
+#textoabsolute1 {
+  position: absolute;
+  padding-top: 3.9rem;
+  font-family: Montserrat Semibold;
+  font-size: 2.3rem;
+  padding-right: 8rem;
+  padding-left: 8rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+#textoabsolute2 {
+  position: absolute;
+  padding-top: 8rem;
+  font-family: Montserrat Semibold;
+  font-size: 2.2rem;
+  padding-right: 30rem;
+  padding-left: 6rem;
+  text-align: center;
+}
+
+.boxs2-1 {
+  width: 29rem;
+  height: 39rem;
+  background-color: #cfcdc1;
+  border-radius: 2.5rem;
+}
+
+.capaecor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 15rem;
+  height: 23 rem;
+  background-color: #cfcdc1;
+  border-radius: 2.5rem;
+  margin: 0 auto;
+  padding-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+#capaecor2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 13rem;
+  height: 20rem;
+  background-color: #cfcdc1;
+  border-radius: 2.5rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.cores {
+  display: flex;
+  max-width: 10rem;
+  max-height: 10rem;
+  margin-left: 3rem;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.subboxnova {
+  font-family: Montserrat Mediume;
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.subbpreco {
+  font-family: Montserrat Mediume;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  padding-right: 7rem;
+  padding-top: 2rem;
+}
+
+.parcelado {
+  font-family: Montserrat Mediume;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  padding-right: 7rem;
+}
+
+.todostextos {
+  margin-top: 2rem;
+}
+
+#centralizardiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  margin-bottom: 2.2rem;
+}
+
+.subbpreco1 {
+  font-family: Montserrat Mediume;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  padding-right: 7rem;
+  padding-top: 3.2rem;
+}
+
+#capinha {
+  display: flex;
+  max-width: 14rem;
+  max-height: 16rem;
+  width: auto;
+  height: auto;
+}
+
+#coresss {
+  display: flex;
+  max-width: 11rem;
+  max-height: 15rem;
+  width: auto;
+  height: auto;
+}
+
+#applepen {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+  margin: 0 auto;
+  margin-right: 5rem;
+}
+
+#tamanhopen {
+  display: flex;
+  justify-content: center;
+  max-width: 28rem;
+  max-height: 22rem;
+  width: auto;
+  height: auto;
+}
+
+.subpreco2 {
+  font-family: Montserrat Mediume;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  padding-right: 7rem;
+  padding-top: 3.2rem;
+}
+
+#beatsimg {
+  display: block;
+  max-width: 17rem;
+  max-height: 19rem;
+  width: auto;
+  height: auto;
+}
+
+.airpodsmaximg {
+  display: flex;
+  max-width: 40rem;
+  max-height: 30rem;
+  width: auto;
+  height: auto;
+  padding-top: 5rem;
+}
+
+#airpodsimgdois {
+  display: block;
+  max-width: 10rem;
+  max-height: 12rem;
+  width: auto;
+  height: auto;
+  padding-top: 5rem;
+}
+
+#fonebeatsimg {
+  display: block;
+  max-width: 22rem;
+  max-height: 15rem;
+  width: auto;
+  height: auto;
+  padding-top: 5rem;
+}
+
+#capaecor3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 18rem;
+  height: 20rem;
+  background-color: #cfcdc1;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#fonebeatdiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+#centralizardiv2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  margin-bottom: 3.6rem;
+}
+
+#applemusic {
+  font-family: Montserrat Bolde;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+#capaecor4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 15rem;
+  height: 23 rem;
+  background-color: #cfcdc1;
+  border-radius: 2.5rem;
+  margin: 0 auto;
+  padding-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+#produtosappletudo {
+  display: flex;
+  flex-direction: row;
+  margin-left: 9rem;
+  gap: 5rem;
+  padding-top: 4.5rem;
+  margin-bottom: 14.5rem;
+}
+
+.blococinza {
+  width: 56rem;
+  height: 30rem;
+  background-color: #cfcdc1;
+  border-radius: 2.5rem;
+  font-family: Montserrat Semibold;
+  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#homekitimg {
+  display: block;
+  max-width: 27rem;
+  max-height: 33rem;
+  width: auto;
+  height: auto;
+}
+
+#applepayimg {
+  display: block;
+  max-width: 17rem;
+  max-height: 19rem;
+  width: auto;
+  height: auto;
+}
+
+.hometitulo {
+  font-family: Montserrat Bolde;
+  font-size: 2.7rem;
+}
+
+#textoshome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2.4rem;
+  font-size: 2.2rem;
+}
+
+#alinhamento {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 5rem;
+}
+
+#textosonly {
+  font-size: 2.2rem;
+}
+
+.tituloapplepay {
+  font-family: Montserrat Bolde;
+  font-size: 2.7rem;
+}
+
+#seta {
+  display: flex;
+  max-width: 5rem;
+  max-height: 5rem;
+  width: auto;
+  height: auto;
+  padding-right: 4rem;
+  padding-top: 13rem;
+}
+
+/* ------ FOOTER ------ */
+
+#blococabecalho {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 62rem;
+  padding-top: 0.7rem;
+}
+
+#linha {
+  border-top: 0.04rem solid #7e7e7e;
+  width: 130rem;
+  margin-left: 2rem;
+}
+
+.til-rodape {
+  font-family: Montserrat Bolde;
+  font-size: 1.7rem;
+}
+
+.text-rodape {
+  font-family: Montserrat Mediume;
+}
+
+.text-rodape2 {
+  font-family: Montserrat Mediume;
+  padding-bottom: 2rem;
+}
+
+.til-rodape3 {
+  font-family: Montserrat Bolde;
+}
+
+#todososblocos {
+  display: flex;
+  flex-direction: row;
+  gap: 13rem;
+  padding-left: 9rem;
+  padding-right: 20rem;
+  padding-top: 3rem;
+  line-height: 3.5rem;
+  font-size: 1.7rem;
+}
+
+#contatoimg {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+#logopreta {
+  padding-left: 3rem;
+  padding-bottom: 0.7rem;
+}
+
+#linha2 {
+  border-bottom: 0.04rem solid #7e7e7e;
+  width: 130rem;
+  margin-left: 2rem;
+}
+
+#finalrodape,
+#finalrodape2 {
+  font-family: Montserrat Mediume;
+  margin-left: 2rem;
+}
+
+#finalrodape {
+  padding-top: 6rem;
+}
+
+#redesepgto {
+  margin-left: 9rem;
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 36.7rem;
+}
+
+.icons,
+.icons2 {
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+#quartobloco * {
+  text-decoration: none;
+  color: black;
+}
+
+/**/
